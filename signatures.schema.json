@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schema": "https://json-schema.org/draft-07/schema",
   "$id": "https://github.com/ReVancedTeam/revanced-signatures/blob/main/signatures.schema.json",
   "title": "Signatures",
   "description": "An ASM signature list for the Patcher.",
