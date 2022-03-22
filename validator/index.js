@@ -37,7 +37,7 @@ if (files.length == 0) error("No JSON files found");
 dataArray = files.map(e => {
     return {
         path: e,
-        json: require(e);
+        json: require(e)
     }
 });
 
