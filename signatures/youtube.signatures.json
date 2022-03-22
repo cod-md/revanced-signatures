@@ -1,7 +1,6 @@
 {
 	"$schema": "../signatures.schema.json",
-	"signatures": [
-		{
+	"signatures": [{
 			"name": "show-video-ads",
 			"returns": "V",
 			"accessors": ["PUBLIC", "FINAL"],
