@@ -1,7 +1,7 @@
 const Ajv2019 = require("ajv/dist/2019");
 const ajv = new Ajv2019({
     allErrors: true
-})
+});
 const glob = require("glob");
 
 function error(err) {
@@ -37,7 +37,7 @@ if (files.length == 0) error("No JSON files found");
 dataArray = files.map(e => {
     return {
         path: e,
-        json: require(e)
+        json: require(e);
     }
 });
 
@@ -48,6 +48,7 @@ let valid = true;
 
 dataArray.forEach(data => {
     console.log(`Validating file: ${data.path}`);
+    
     valid = validate(data.json);
     if (!valid) console.error(validate.errors);
 })
